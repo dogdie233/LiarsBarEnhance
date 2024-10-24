@@ -8,6 +8,7 @@
         <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
         <LangVersion>latest</LangVersion>
         <OutDir>./Output</OutDir>
+
     </PropertyGroup>
     
     <PropertyGroup Condition="'$(LiarsBarManaged)' != ''">
@@ -37,18 +38,23 @@
     <ItemGroup>
         <Reference Include="Assembly-CSharp">
             <HintPath>$(ManagedDir)\Assembly-CSharp.dll</HintPath>
+            <Private>false</Private>
         </Reference>
         <Reference Include="Mirror">
             <HintPath>$(ManagedDir)\Mirror.dll</HintPath>
+            <Private>false</Private>
         </Reference>
         <Reference Include="UnityEngine.UI">
             <HintPath>$(ManagedDir)\UnityEngine.UI.dll</HintPath>
+            <Private>false</Private>
         </Reference>
         <Reference Include="TextMeshPro">
             <HintPath>$(ManagedDir)\Unity.TextMeshPro.dll</HintPath>
+            <Private>false</Private>
         </Reference>
         <Reference Include="Unity.Localization">
             <HintPath>$(ManagedDir)\Unity.Localization.dll</HintPath>
+            <Private>false</Private>
         </Reference>
     </ItemGroup>
 </Project>
